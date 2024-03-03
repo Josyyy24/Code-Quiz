@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <title>Coding Quiz</title>
+</head>
+
+<body>
+    <div class="containerNew">
+        <header>
+            <div>
+                <a href="./assets/highscore.html">
+                    <button class="scores-header" id="view-high-scores">View High Scores</button>
+                </a>
+            </div>
+ 
+            <div class="timer">
+                <p>Time: <span id="timer">0</span></p>
+            </div>
+        </header>
+ 
+        <main class="quiz">
+            <div id="quiz-start">
+                <div class="landing" id="start-screen">
+                    <h1 id="top">CODING QUIZ</h1>
+                    <p>Try to answer the questions before the timer reaches 0. When the quiz has ended, you'll submit your initials for your high score.
+                        <br><br>For every correct answer, you'll get 5 seconds added to the timer.
+                        <br><br>However, for every incorrect answer you'll get 10 seconds deducted from the timer.
+                        <br><br>Your score will be the time that's left on the timer when you finish the quiz.
+                    </p>
+                    <button id="start">Start</button>
+                </div>
+            </div>
+ 
+            <div class="hide" id="questions">
+                <h2 id="question-words"></h2>
+                <div class="options" id="options">
+                </div>
+            </div>
+ 
+            <div class="hide" id="quiz-end">
+                <h2>End of Quiz!</h2>
+                <p>Your final score is: <span id="score-final"></span>
+                </p>
+                <p>Please enter your name: <input type="text" id="name" max="3" />
+                    <button id="submit-score">Submit</button>
+                </p>
+            </div>
+ 
+            <div id="feedback" class="feedback hide"></div>
+        </main>
+    </div>
+    
+    <script src="assets/script.js"></script>
+    
+</body>
+</html>
